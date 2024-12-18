@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/all.min.css">
+</head>
+
+<body>
+
+    <header class="py-5">
+        <div class="container d-flex justify-content-between">
+            <div class="logo ps-4">
+                <a href="#" class="ps-5 text-decoration-none d-flex gap-2">
+                    <img src="images/logo.png" alt="weather logo">
+                    <div>
+                        <h1 class="fs-6 text-white fw-bold mb-0">Weather</h1>
+                        <small>tagline goes here</small>
+                    </div>
+                </a>
+            </div>
+            <div class="menu pe-4">
+                <ul class="list-unstyled text-white d-flex gap-2 pe-5">
+                    <li class="active py-1 px-4 rounded-pill">Home</li>
+                    <li class="py-1 px-4 rounded-pill">News</li>
+                    <li class="py-1 px-4 rounded-pill">Live cameras</li>
+                    <li class="py-1 px-4 rounded-pill">Photos</li>
+                    <li class="py-1 px-4 rounded-pill">Contact</li>
+                </ul>
+            </div>
+        </div>
+    </header>
+    <main>
+        <div class="hero">
+            <div class="container">
+                <form class="px-5">
+                    <input class="w-100 rounded-pill p-3 search border-0 text-white position-relative cityInput"
+                        type="text" placeholder="Find your location...">
+                    <input class="position-absolute border-0 rounded-pill text-white py-2 searchBtn" type="button"
+                        value="Find">
+                </form>
+            </div>
+        </div>
+        <div class="forecast-table my-5">
+            <div class="container">
+                <div class="row mx-5 g-0">
+                    <div class="col-lg-4 today-forecast rounded-start-2">
+                        <div class="forecast-header d-flex p-2 justify-content-between rounded-start-2">
+                            <div class="day"></div>
+                            <div class="date"></div>
+                        </div>
+                        <div class="forecast-content">
+                            <div class="location"></div>
+                            <div class="temp text-white fw-bold me-5"></div>
+                            <img class="forecast-icon" width="90">
+                            <p class="my-3"></p>
+                            <span class="me-4"><img src="images/icon-umberella.png" class="me-1">20%</span>
+                            <span class="me-4"><img src="images/icon-wind.png" class="me-1">18km/h</span>
+                            <span class="me-4"><img src="images/icon-compass.png" class="me-1">East</span>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 tomorrow-forecast">
+                        <div class="forecast-header p-2">
+                            <div class="day"></div>
+                        </div>
+                        <div class="forecast-content">
+                            <img class="forecast-icon mb-3">
+                            <div class="max-temp text-white fw-bold"></div>
+                            <span class="min-temp"></span>
+                            <p class="my-3"></p>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 day3-forecast rounded-end-2">
+                        <div class="forecast-header p-2 rounded-end-2">
+                            <div class="day"></div>
+                        </div>
+                        <div class="forecast-content">
+                            <img class="forecast-icon mb-3">
+                            <div class="max-temp text-white fw-bold"></div>
+                            <span class="min-temp"></span>
+                            <p class="my-3"></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer class="py-5">
+        <div class="container">
+            <div class="row mx-5">
+                <div class="col-md-8">
+                    <form>
+                        <input class="rounded-pill p-3 border-0 text-white w-100 subscribe position-relative"
+                            type="text" placeholder="Enter your email to subscribe...">
+                        <input class="rounded-pill border-0 text-white py-2 position-absolute subscribeBtn"
+                            type="submit" value="Subscribe">
+                    </form>
+                </div>
+                <div class="col-md-3 offset-1 d-flex gap-2">
+                    <span class="rounded-circle d-flex align-items-center justify-content-center"><i
+                            class="fa-brands fa-facebook-f fa-lg"></i></span>
+                    <span class="rounded-circle d-flex align-items-center justify-content-center"><i
+                            class="fa-brands fa-twitter fa-lg"></i></span>
+                    <span class="rounded-circle d-flex align-items-center justify-content-center"><i
+                            class="fa-brands fa-google-plus-g fa-lg"></i></span>
+                    <span class="rounded-circle d-flex align-items-center justify-content-center"><i
+                            class="fa-brands fa-pinterest fa-lg"></i></span>
+                </div>
+            </div>
+            <p class="mx-5 mt-5">Copyright 2014 Company name. Designed by Themezy. All rights reserved</p>
+        </div>
+    </footer>
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>

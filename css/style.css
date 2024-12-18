@@ -1,0 +1,122 @@
+body {
+    font-family: "Roboto";
+    color: #bfc1c8;
+    font-size: 14px;
+    background: #1e202b;
+
+    .logo {
+        small {
+            color: #bfc1c8;
+        }
+    }
+
+    .menu {
+        li {
+            border: 2px solid transparent;
+
+            &.active,
+            &:hover {
+                border-color: #009ad8;
+                color: #009ad8;
+                transition: ease-in-out 0.4s;
+            }
+        }
+    }
+
+    .hero {
+        background-image: url("../images/banner.png");
+        background-size: cover;
+        padding: 70px 0;
+    }
+
+    form {
+        input {
+
+            &.search,
+            &.subscribe {
+                outline: 0;
+                background-color: #1e202b;
+            }
+
+            &.searchBtn {
+                background-color: #009ad8;
+                top: 31%;
+                right: 11%;
+                padding-inline: 41px;
+            }
+
+            &.subscribeBtn {
+                background-color: #009ad8;
+                padding-inline: 40px;
+                right: 38%;
+                bottom: -32.3%;
+            }
+        }
+    }
+
+    .forecast-table {
+        text-align: center;
+
+        .today-forecast {
+            background-color: #323544;
+
+            .forecast-header {
+                background-color: #2D303D;
+            }
+
+            .forecast-content {
+                text-align: left;
+
+                .temp {
+                    font-size: 90px;
+                }
+            }
+        }
+
+        .tomorrow-forecast {
+            background-color: #262936;
+
+            .forecast-header {
+                background-color: #222530;
+            }
+        }
+
+        .day3-forecast {
+            background-color: #323544;
+
+            .forecast-header {
+                background-color: #2D303D;
+            }
+        }
+
+        .forecast-content {
+            padding: 30px 20px;
+
+            .max-temp {
+                font-size: 24px;
+
+            }
+
+            p {
+                color: #009ad8;
+            }
+        }
+    }
+
+    footer {
+        background-color: #262936;
+
+        span {
+            width: 40px;
+            height: 40px;
+            background-color: #1E202B;
+            color: #009ad8;
+
+            &:hover {
+                background-color: #009ad8;
+                color: #fff;
+                transition: ease-in-out 0.4s;
+            }
+        }
+    }
+}
